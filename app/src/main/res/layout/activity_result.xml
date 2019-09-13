@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".resultActivity">
+<!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical"-->
+    <!--android:layout_margin="10dp"-->
+    <!--android:layout_below="@+id/relative_layout">-->
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/textViewUnit"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:text="Unit - A"-->
+            <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+            <!--android:textSize="30sp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/textViewRoll"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/textViewUnit"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginTop="41dp"-->
+            <!--android:text="Roll Number : 123456"-->
+            <!--android:textAppearance="?android:attr/textAppearanceLarge" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/textViewSeat"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/textViewRoll"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginTop="68dp"-->
+            <!--android:text="Merit Position"-->
+            <!--android:textAlignment="center"-->
+            <!--android:textAppearance="?android:attr/textAppearanceLarge" />-->
+
+    <!--</RelativeLayout>-->
+
+
+
+    <EditText
+        android:id="@+id/get_editText"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:inputType="number"
+        android:layout_alignParentLeft="true" />
+
+    <Button
+        android:id="@+id/result_show_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/get_editText"
+        android:text="Button" />
+
+
+    <TextView
+        android:id="@+id/a"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="100dp"
+        android:text=" English" />
+
+    <TextView
+        android:id="@+id/parse_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="100dp"
+        android:layout_toRightOf="@+id/a"
+        android:text="number" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/a"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Physice" />
+
+    <TextView
+        android:id="@+id/parse_date1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/parse_date"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/text1"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text=" Merit Position:" />
+
+    <TextView
+        android:id="@+id/parse_date2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/parse_date1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/text3"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text3"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text=" Math    :" />
+
+    <TextView
+        android:id="@+id/aaaaa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/parse_date2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/text4"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/text5"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text4"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text=" Chemistry    :" />
+
+    <TextView
+        android:id="@+id/aaaaaa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aaaaa"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/text5"
+        android:text="TextView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*You can find result for any student "
+        android:layout_marginTop="550dp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"/>
+
+
+<!--</LinearLayout>-->
+
+<!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/relative_layout">-->
+
+
+    <!--<EditText-->
+        <!--android:id="@+id/get_editText"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_marginTop="87dp"-->
+        <!--android:ems="10"-->
+        <!--android:inputType="number"-->
+        <!--android:layout_alignParentLeft="true" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/result_show_button"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_marginTop="167dp"-->
+        <!--android:text="Button" />-->
+<!--</LinearLayout>-->
+
+</RelativeLayout>

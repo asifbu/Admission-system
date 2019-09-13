@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".ApplyActivity">
+
+    <include
+        android:id="@+id/apply_toolbar"
+        layout="@layout/app_bar_layout">
+
+    </include>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="60dp"
+        android:text="HSC Information :"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/apply_hsc_roll"
+        android:layout_width="300dp"
+        android:layout_height="38dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="115dp"
+        android:background="@drawable/edittext_round"
+        android:hint="Hsc Roll"
+        android:inputType="number"
+        android:paddingLeft="15dp"
+        android:text="44556" />
+
+    <EditText
+        android:id="@+id/apply_year"
+        android:layout_width="300dp"
+        android:layout_height="38dp"
+        android:layout_below="@+id/apply_hsc_roll"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edittext_round"
+        android:hint="Hcs Year"
+        android:inputType="number"
+        android:paddingLeft="15dp"
+        android:text="2016"
+
+        />
+
+
+    <TextView
+        android:id="@+id/group_text"
+        android:layout_width="110dp"
+        android:layout_height="38dp"
+        android:layout_below="@+id/apply_year"
+        android:layout_centerHorizontal="false"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edittext_sppiner"
+        android:inputType="text"
+        android:paddingLeft="15dp"
+        android:paddingTop="6dp"
+        android:text="Hsc Group"
+        android:textSize="18sp"
+
+        />
+
+    <Spinner
+        android:id="@+id/apply_group_spinner"
+        android:layout_width="190dp"
+        android:layout_height="38dp"
+        android:layout_below="@+id/apply_year"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@+id/group_text"
+        android:layout_toRightOf="@+id/group_text"
+        android:background="@drawable/edittext_sppiner1"
+        android:entries="@array/group" />
+
+
+    <EditText
+        android:id="@+id/hsc_board"
+        android:layout_width="300dp"
+        android:layout_height="38dp"
+        android:layout_below="@+id/group_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edittext_round"
+        android:hint="Hsc Board"
+        android:inputType="text"
+        android:paddingLeft="15dp"
+        android:text="barisal" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="300dp"
+        android:text="SSC Information :"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/ssc_roll"
+        android:layout_width="300dp"
+        android:layout_height="38dp"
+        android:layout_below="@+id/hsc_board"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/edittext_round"
+        android:hint="Ssc Roll"
+        android:inputType="number"
+        android:paddingLeft="15dp"
+        android:text="5846186" />
+
+
+    <EditText
+        android:id="@+id/ssc_year"
+        android:layout_width="300dp"
+        android:layout_height="38dp"
+        android:layout_below="@+id/ssc_roll"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edittext_round"
+        android:hint="Ssc Year"
+        android:inputType="number"
+        android:paddingLeft="15dp"
+        android:text="2014"
+
+        />
+
+    <TextView
+        android:id="@+id/group_text2"
+        android:layout_width="110dp"
+        android:layout_height="38dp"
+        android:layout_below="@+id/ssc_year"
+        android:layout_centerHorizontal="false"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edittext_sppiner"
+        android:inputType="text"
+        android:paddingLeft="15dp"
+        android:paddingTop="6dp"
+        android:text="Ssc Group"
+        android:textSize="18sp"
+
+        />
+
+    <Spinner
+        android:id="@+id/ssc_spinner"
+        android:layout_width="190dp"
+        android:layout_height="38dp"
+        android:layout_below="@+id/ssc_year"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@+id/group_text2"
+        android:layout_toRightOf="@+id/group_text2"
+        android:background="@drawable/edittext_sppiner1"
+        android:entries="@array/ssc_group" />
+
+
+    <EditText
+        android:id="@+id/ssc_board"
+        android:layout_width="300dp"
+        android:layout_height="38dp"
+        android:layout_below="@+id/group_text2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edittext_round"
+        android:hint="Ssc Board"
+        android:inputType="text"
+        android:paddingLeft="15dp"
+        android:text="barisal" />
+
+
+    <Button
+        android:id="@+id/click_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ssc_board"
+        android:layout_marginLeft="290dp"
+        android:text="NEXT" />
+
+
+    <!--
+        <EditText
+            android:id="@+id/apply_hsc_roll"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:hint="Hsc Roll"
+            android:inputType="number"
+            android:text="44556" />
+
+        <EditText
+            android:id="@+id/apply_year"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="124dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginRight="26dp"
+            android:ems="10"
+            android:hint="Hcs Year"
+            android:inputType="number"
+            android:text="2016" />
+
+        <Spinner
+            android:id="@+id/apply_group_spinner"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="210dp"
+            android:layout_marginLeft="210dp"
+            android:layout_marginTop="178dp"
+            android:entries="@array/group" />
+
+        <TextView
+            android:id="@+id/group_text"
+            android:layout_width="168dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="36dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="176dp"
+            android:text="Hsc Group"
+            android:textSize="18sp" />
+
+
+        <Button
+            android:id="@+id/click_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="161dp"
+            android:layout_marginLeft="161dp"
+            android:text="submit" />
+
+        <EditText
+            android:id="@+id/hsc_board"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/apply_hsc_roll"
+            android:layout_alignLeft="@+id/apply_hsc_roll"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="215dp"
+            android:ems="10"
+            android:hint="Hsc Board"
+            android:inputType="text"
+            android:text="barisal" />
+
+        <EditText
+            android:id="@+id/ssc_board"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/group_text"
+            android:layout_alignLeft="@+id/group_text"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="458dp"
+            android:ems="10"
+            android:hint="Ssc Board"
+            android:inputType="text"
+            android:text="barisal" />
+
+        <EditText
+            android:id="@+id/ssc_roll"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/apply_hsc_roll"
+            android:layout_alignLeft="@+id/apply_hsc_roll"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="239dp"
+            android:ems="10"
+            android:hint="Ssc Roll"
+            android:inputType="number"
+            android:text="5846186" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/group_text"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginBottom="158dp"
+            android:text="Ssc Group"
+            android:textSize="18sp"
+            android:layout_alignLeft="@+id/group_text"
+            android:layout_marginLeft="0dp" />
+
+        <Spinner
+            android:id="@+id/ssc_spinner"
+            android:layout_width="229dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/click_button"
+            android:layout_alignLeft="@+id/click_button"
+            android:layout_alignBottom="@+id/textView5"
+            android:layout_marginStart="-38dp"
+            android:layout_marginLeft="-38dp"
+            android:layout_marginBottom="0dp"
+            android:entries="@array/ssc_group" />
+
+        <EditText
+            android:id="@+id/ssc_year"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="33dp"
+            android:layout_marginLeft="33dp"
+            android:layout_marginBottom="191dp"
+            android:ems="10"
+            android:hint="Ssc Year"
+            android:inputType="number"
+            android:text="2013" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="316dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/group_text"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="262dp"
+            android:text="Ssc Exam Information :"
+            android:layout_alignLeft="@+id/group_text" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="316dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/apply_toolbar"
+            android:layout_alignStart="@+id/group_text"
+            android:layout_alignLeft="@+id/group_text"
+            android:layout_marginStart="-25dp"
+            android:layout_marginLeft="-25dp"
+            android:layout_marginTop="1dp"
+            android:text="Hsc Exam Information :" />-->
+
+
+</RelativeLayout>

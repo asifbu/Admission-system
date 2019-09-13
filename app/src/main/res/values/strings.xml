@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">V2</string>
+
+    <array name="group">
+        <item>Click here to choose</item>
+        <item>Science</item>
+        <item>Arts</item>
+        <item>Commarce</item>
+    </array>
+
+    <array name="ssc_group">
+        <item>Click here to choose</item>
+        <item>Science</item>
+        <item>Arts</item>
+        <item>Commarce</item>
+    </array>
+
+    <array name="unit">
+        <item>A Unit</item>
+        <item>B Unit</item>
+        <item>C Unit</item>
+    </array>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+</resources>
